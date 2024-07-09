@@ -1,6 +1,11 @@
 #padding-left {
   padding-left: 0%;
 }
+.modal-open .modal-backdrop {
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1 !important;
+}
 
 .timeline {
     list-style: none;
