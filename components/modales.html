@@ -15,16 +15,19 @@
     </div>
   </div>
 
-  <div class="modal fade" tabindex="-1" id="geheime-kommunikation">
+  <div class="modal fade modal-lg" tabindex="-1" id="geheime-kommunikation">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
+          <div class="modal-header">
+            <h5 class="modal-title">Geheime-Kommunikation</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="/assets/geheime-Kommunikation.svg" height="auto" width="auto">
         </div>
         <div class="modal-footer">
           <!-- <a class="me-auto" data-bs-toggle="#quellen" href="#">[1]</a> -->
           <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[1]</button>
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -34,10 +37,11 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
+          <div class="modal-header">
+            <h5 class="modal-title">Kryptologie </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
           <img src="/assets/kryptologie.svg" height="auto" width="auto">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -46,12 +50,27 @@
   <div class="modal fade modal-xl" tabindex="-1" id="quellen" style="backdrop-filter:blur(3px); background-color:rgba(0, 0, 0, 0.5); opacity: 1 !important">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-body">
-          <p>[1]: Simon Singh: Geheime Botschaften, 11. Auflage, München, Deutscher Taschenbuch Verlag GmbH & Co.KG, 2001, S. 45
-          </p>
+        <div class="modal-header">
+        <h5 class="modal-title">Quellen</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-body">
+          <!-- Diagramm geheime Geheime-Kommunikation -->
+          <p>[1]: Simon Singh: Geheime Botschaften, 11. Auflage, München, Deutscher Taschenbuch Verlag GmbH & Co.KG, 2001, S. 45</p>
+          <!-- Cäsar verschlüsslung -->
+          <p>[2]: <a href="https://www.redhat.com/de/blog/brief-history-cryptography">https://www.redhat.com/de/blog/brief-history-cryptography</a>, aufgerufen am 10.07.2024 um 11:34 Uhr</p>
+          <!-- Cäsar abänderung -->
+          <p>[3]: Albrecht Beutelspacher: Geheimsprachen, 5. Auflage, München, C.H.Beck oHG, 1997, S. 25-29</p>
+          <!-- Viginere Verschlüsselung -->
+          <p>[4]: <a href="https://www.kryptowissen.de/vigenere-verschluesselung.html">https://www.kryptowissen.de/vigenere-verschluesselung.html</a>, aufgerufen am 10.07.2024 um 11:35 Uhr</p>
+          <!-- TODO Bild Veginere Tabelle -->
+          <p>[5]: </p>
+          <!-- Inigma -->
+          <p>[6]: Albrecht Beutelspacher: Geheimsprachen, 5. Auflage, München, C.H.Beck oHG, 1997, S. 33-36</p>
+          <!-- TODO Niklas Doktorarbeit -->
+          <p>[7]: </p>
+          <!-- RSA -->
+          <p>[8]: Albrecht Beutelspacher: Geheimsprachen, 5. Auflage, München, C.H.Beck oHG, 1997, S. 67-69</p>
         </div>
       </div>
     </div>
@@ -61,14 +80,14 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Definition</h5>
+          <h5 class="modal-title">Beschreibung</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Cäsar</p>
+          <p>Es werden zwei Alphabete verwendet, das Klartextalphabet (KTA) und das um einen bestimmten ganzzahligen Schlüssel verschobene Geheimtextalphabet (GTA) in natürlicher Reihenfolge. Man schreibt nun das GTA unter das KTA. Zum Verschlüsseln wird nun jeder Buchstabe des Klartextes mit dem darunter stehenden Buchstaben des GTAs ersetzt, zum Entschlüsseln genau umgekehrt. Die Cäsar-Verschlüsselung ist ein symmetrisches System, das auf dem Prinzip der monoalphabetischen Substitution beruht, wobei jeder einzelne Buchstabe ersetzt wird, es ist eine sog. Chiffrierung. </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[2]</button>
         </div>
       </div>
     </div>
@@ -78,14 +97,16 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Definition</h5>
+          <h5 class="modal-title">Beschreibung</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Modal body text goes here</p>
+          <p>
+            Es werden wechselnde GTAs in natürlicher Reihenfolge verwendet, die durch ein Schlüsselwort bestimmt werden (der jeweilige Buchstabe im Schlüsselwort stimmt mit dem ersten Buchstaben im zu benutzenden GTA überein), das immer wiederholt wird. Die möglichen Alphabete werden in einem Quadrat dargestellt. Die Entschlüsselung erfolgt in umgekehrter Reihenfolge. Es handelt sich hierbei um eine symmetrische, polyalphabetische Chiffrierung, der Schlüssel ist demnach das Schlüsselwort.
+          </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[4]</button>
         </div>
       </div>
     </div>
@@ -99,11 +120,69 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Das erste Modell einer Masschine der Enigma Maschine wurde 1923 von Ingenieur Arthur Scherbius der Öffenlichkeit vorgestellt. Das Patent hierfür wurde 1918 angmeldet. Es gab einige Enigma Versionen im Laufe der Entwicklung, die allgemein als Enigma bezeichnete ist allerdings das Modell Enigma I. Enigma ist das berühmt berüchtigte Verschlüsselungsgerät der Wehrmacht gewesen und war ein großer Sprung der Verschlüsselungstechnik. Es wurde 1939 von Alan Turing und seinem Team im Auftrag des Britischen Geheimdienstes Entschlüsselt. Dies war ausschlaggebend in den folgenden Kriegsjahre.</p>
-          <p>Enigma ist eine symmetrische polyalphabetische Verschlüsselungeinheit. Welche mithilfe mehrerer drehbarerer Rotoren auf Schlüsselwörter eingestellt werden konnte, darüber hinaus gibt es ein selbst einstellbares Steckbrett. Es gibt durch eben diese Einstellungsmöglichkeiten 158.962.555.217.826.360.000 mögliche Schlüssel.</p>
+          <p>Das erste Modell einer Masschine der Enigma Maschine wurde 1923 von Ingenieur Arthur Scherbius der Öffenlichkeit vorgestellt. Das Patent hierfür wurde 1918 angmeldet. Es gab einige Enigma Versionen im Laufe der Entwicklung, die allgemein als Enigma bezeichnete ist allerdings das Modell Enigma I. Enigma ist das berühmt berüchtigte Verschlüsselungsgerät der Wehrmacht gewesen und war ein großer Sprung der Verschlüsselungstechnik.</p>
+          <p>Enigma ist eine symmetrische polyalphabetische Verschlüsselungeinheit, welche mithilfe mehrerer drehbarerer Rotoren auf Schlüsselwörter eingestellt werden konnte. Darüber hinaus gibt es ein selbst einstellbares Steckbrett. Es gibt durch eben diese Einstellungsmöglichkeiten 158.962.555.217.826.360.000 mögliche Schlüssel.</p>
+          <p>Der zu übertragende Schlüssel besteht hierbei aus der Anfangseinstellung der Rotoren und der Verdrahtung im Steckbrett.</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[5]</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" id="caesar-verschluesselung-abaenderung">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Beschreibung</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Abänderung der Cäsar-Verschlüsselung: Statt eines GTAs in natürlicher Reihenfolge wird nun ein verändertes Alphabet verwendet, wodurch eine Vielzahl neuer Möglichkeiten entsteht. Wichtig ist, dass dennoch jeder Buchstabe einzigartig bleibt, dass also jeder Buchstabe im GTA nur einmal vorkommt. Der zu übertragende Schlüssel ist hier allerdings das gesamte verwendete GTA. Es handelt sich auch hier um ein symmetrisches, monoalphabetisches Chiffre. 
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[3]</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" id="des">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Beschreibung</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Der DES verschlüsselt Bits, wobei er einen Block von 64 Bits auf einmal verschlüsselt. Dazu wird ein Schlüssel von 56 Bits verwendet. Demnach wird der Klartext in Form von Bits in Blöcke von je 64 eingeteilt und nacheinander verschlüsselt.
+          </p>
+          </div>
+        <div class="modal-footer">
+          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[6]</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" tabindex="-1" id="">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Beschreibung</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+
+          </p>
+          </div>
+        <div class="modal-footer">
+          quelle
         </div>
       </div>
     </div>
