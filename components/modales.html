@@ -64,7 +64,7 @@
           <!-- Viginere Verschlüsselung -->
           <p>[4]: <a href="https://www.kryptowissen.de/vigenere-verschluesselung.html">https://www.kryptowissen.de/vigenere-verschluesselung.html</a>, aufgerufen am 10.07.2024 um 11:35 Uhr</p>
           <!-- TODO Bild Veginere Tabelle -->
-          <p>[5]: </p>
+          <p>[5]: <a href="https://commons.wikimedia.org/wiki/File:Vigen%C3%A8re_square.svg">https://commons.wikimedia.org/wiki/File:Vigen%C3%A8re_square.svg</a>, aufgerufen am 11.07.2024 um 08:41 Uhr</p>
           <!-- Inigma -->
           <p>[6]: Albrecht Beutelspacher: Geheimsprachen, 5. Auflage, München, C.H.Beck oHG, 1997, S. 33-36</p>
           <!-- TODO Niklas Doktorarbeit -->
@@ -93,7 +93,7 @@
     </div>
   </div>
 
-  <div class="modal fade" tabindex="-1" id="vigenere-quadrat">
+  <div class="modal fade modal-lg" tabindex="-1" id="vigenere-quadrat">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -101,12 +101,21 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>
-            Es werden wechselnde GTAs in natürlicher Reihenfolge verwendet, die durch ein Schlüsselwort bestimmt werden (der jeweilige Buchstabe im Schlüsselwort stimmt mit dem ersten Buchstaben im zu benutzenden GTA überein), das immer wiederholt wird. Die möglichen Alphabete werden in einem Quadrat dargestellt. Die Entschlüsselung erfolgt in umgekehrter Reihenfolge. Es handelt sich hierbei um eine symmetrische, polyalphabetische Chiffrierung, der Schlüssel ist demnach das Schlüsselwort.
-          </p>
+          <div class="container-fluid">
+            <div class="row align-items-start">
+              <div class="col">
+                <p>
+                  Es werden wechselnde GTAs in natürlicher Reihenfolge verwendet, die durch ein Schlüsselwort bestimmt werden (der jeweilige Buchstabe im Schlüsselwort stimmt mit dem ersten Buchstaben im zu benutzenden GTA überein), das immer wiederholt wird. Die möglichen Alphabete werden in einem Quadrat dargestellt. Die Entschlüsselung erfolgt in umgekehrter Reihenfolge. Es handelt sich hierbei um eine symmetrische, polyalphabetische Chiffrierung, der Schlüssel ist demnach das Schlüsselwort.
+                </p>
+              </div>
+              <div class="col">
+                <img src="/assets/Vigenère_square.svg" width="300" height="auto">
+              </div>
+            </div>
+          </div>
         </div>
         <div class="modal-footer">
-          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[4]</button>
+          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[4] [5]</button>
         </div>
       </div>
     </div>
