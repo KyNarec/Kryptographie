@@ -71,6 +71,7 @@
           <p>[7]: <a href="https://leopard.tu-braunschweig.de/receive/dbbs_mods_00001705">https://leopard.tu-braunschweig.de/receive/dbbs_mods_00001705</a>, aufgerufen am 11.07.2024 um 09:15 Uhr</p>
           <!-- RSA -->
           <p>[8]: Albrecht Beutelspacher: Geheimsprachen, 5. Auflage, München, C.H.Beck oHG, 1997, S. 67-69</p>
+          <p>[9]: <a href="https://kryptografie.de/kryptografie/chiffre/images/enigma-01.jpg">https://kryptografie.de/kryptografie/chiffre/images/enigma-01.jpg</a>, aufgerufen am 11.07.2024 um 19:07 Uhr</p>
         </div>
       </div>
     </div>
@@ -121,20 +122,34 @@
     </div>
   </div>
 
-  <div class="modal fade modal-lg" tabindex="-1" id="enigma">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade" tabindex="-1" id="enigma">
+    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Definition</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>Das erste Modell einer Masschine der Enigma Maschine wurde 1923 von Ingenieur Arthur Scherbius der Öffenlichkeit vorgestellt. Das Patent hierfür wurde 1918 angmeldet. Es gab einige Enigma Versionen im Laufe der Entwicklung, die allgemein als Enigma bezeichnete ist allerdings das Modell Enigma I. Enigma ist das berühmt berüchtigte Verschlüsselungsgerät der Wehrmacht gewesen und war ein großer Sprung der Verschlüsselungstechnik.</p>
-          <p>Enigma ist eine symmetrische polyalphabetische Verschlüsselungeinheit, welche mithilfe mehrerer drehbarerer Rotoren auf Schlüsselwörter eingestellt werden konnte. Darüber hinaus gibt es ein selbst einstellbares Steckbrett. Es gibt durch eben diese Einstellungsmöglichkeiten 158.962.555.217.826.360.000 mögliche Schlüssel.</p>
-          <p>Der zu übertragende Schlüssel besteht hierbei aus der Anfangseinstellung der Rotoren und der Verdrahtung im Steckbrett.</p>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <p>Das erste Modell einer Masschine der Enigma Maschine wurde 1923 von Ingenieur Arthur Scherbius der Öffenlichkeit vorgestellt. Das Patent hierfür wurde 1918 angmeldet. Es gab einige Enigma Versionen im Laufe der Entwicklung, die allgemein als Enigma bezeichnete ist allerdings das Modell Enigma I. Enigma ist das berühmt berüchtigte Verschlüsselungsgerät der Wehrmacht gewesen und war ein großer Sprung der Verschlüsselungstechnik.
+                </p>
+                <p>
+                  Die Enigma ist eine mechanische Verschlüsselungsmaschine. Es wird eine Buchstabentaste eines Klartextbuchstaben gedrückt, woraufhin ein Lämpchen den zugehörigen Geheimtextbuchstaben anzeigt. Dieser soll nun aufgeschrieben werden. In der Maschine sind je nach Modell drei bis fünf Rotoren enthalten. Diese Rotoren sind miteinander gekoppelt und werden nach jeder Eingabe eines Buchstabens um eine Einheit weitergedreht. Daraus ergibt sich eine große Periode, bis die Maschine wieder im Ausgangszustand ist. Jeder Rotor hat 26 Einstellungen, die auf beiden Seiten mit durch elektrische Kontakte markiert sind. Die Kontakte auf der einen Seite des Rotors sind zusätzlich durch interne elektrische Leitungen unregelmäßig mit denen auf der anderen Seite verbunden. Dies ist eine spezielle, feste Vertauschung der 26 Buchstaben, wodurch eine feste monoalpabetische Verschlüsselung entsteht. Wenn ein Buchstabe eingetippt wird, wird auf den entsprechenden Kontakt auf der Außenseite des ersten Rotors ein Stromstoß geleitet. Dieser wird dann entsprechend der aktuellen Einstellung aller Scheiben und deren interner Verdrahtung bis zum letzten Rotor geführt. Anschließend wird der Strom auf die sog. „Umkehrwalze“, den letzten Rotor, geleitet. Anders als die anderen Rotoren hat er keine Kontakte auf der Außenseite, da er den ankommenden Strom nur permutieren bzw. „reflektieren“ soll, welcher dann wieder bis zurück zum ersten Rotor geleitet wird. Der Kontakt, der dadurch nun Strom erhält, ist der passende Geheimbuchstabe. Die Anfangseinstellung der meist drei Rotoren wird durch drei Buchstaben festgelegt und an den Empfänger übertragen, möglicherweise auch separat verschlüsselt.          </p>
+                <p>
+                  Der zu übertragende Schlüssel besteht hierbei aus der Anfangseinstellung der Rotoren und der Verdrahtung im Steckbrett.
+                </p>
+              </div>
+              <div class="col-5 ">
+                <img src="/assets/enigma-01.jpg" height="740" width="auto">
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="modal-footer">
-          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[6] [7]</button>
+          <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[6] [7] [8]</button>
         </div>
       </div>
     </div>
