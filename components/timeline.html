@@ -26,7 +26,15 @@
                     <button id="padding-left" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#caesar-verschluesselung"><h4 class="timeline-title">Cäsar-Verschlüsselung (ca. 100 v. Chr.)</h4></button>
                 </div>
                 <div class="timeline-body">
-                <p>Die Cäsar-Verschlüsselung wurde erstmals im alten römischen Reich von Julius Cäsar (ca. 100 v. Chr.) benutzt, nach dem die Methode auch benannt wurde. Er verwendete sie, um in Kriegszeiten geheime Nachrichten an seine Armeegeneräle zu schicken. Damit keine feindlichen Truppen von seinen nächsten Vorhaben erfahren konnten, verschlüsselte er seine Befehle, indem er jeden Buchstaben seines Klartextes im Alphabet um drei Stellen nach hinten verschob. Später wurden dann auch alle anderen möglichen Verschiebungen verwendet, insgesamt 26. Schlüssel ist die Anzahl der Verschiebungen vom Klartext- zum Geheimtaxtalphabet (GTA). </p>                
+                <p>
+                  Die Cäsar-Verschlüsselung wurde erstmals im alten römischen Reich von Julius Cäsar (ca. 100 v. Chr.) benutzt, nach dem die Methode auch benannt wurde. Er verwendete sie, um in Kriegszeiten geheime Nachrichten an seine Armeegeneräle zu schicken. Damit keine feindlichen Truppen von seinen nächsten Vorhaben erfahren konnten, verschlüsselte er seine Befehle, indem er jeden Buchstaben seines Klartextes im Alphabet um drei Stellen nach hinten verschob. Später wurden dann auch alle anderen möglichen Verschiebungen verwendet, insgesamt 26. Schlüssel ist die Anzahl der Verschiebungen vom Klartext- zum Geheimtaxtalphabet (GTA).
+                </p>                
+                </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[2]</button>
                 </div>
               </div>
             </li>
@@ -37,7 +45,16 @@
                   <h4 class="timeline-title" id="padding-left">Entschlüsselung</h4></button>
                 </div>
                 <div class="timeline-body">
-                <p>Da es nur 26 mögliche Verschiebungen gibt, kann hier die Brute-Force-Methode, das Ausprobieren aller Möglichkeiten, verwendet werden. An einer der Verschiebungen sollte der Text eine sinnvolle Nachricht ergeben. Bei längeren Texten kann auch eine Häufigkeitsanalyse von Vorteil sein. Hier wird verglichen, welcher Buchstabe im Geheimtext am häufigsten vorkommt, und welcher in der verwendeten Sprache des Klartextes am häufigsten sein sollte. Diese eindeutig zuzuordnenden Buchstaben können dann schon eingesetzt und der Rest nach den wahrscheinlichsten Mustern ergänzt werden.</p>                </div>
+                <p>
+                  Da es nur 26 mögliche Verschiebungen gibt, kann hier die Brute-Force-Methode, das Ausprobieren aller Möglichkeiten, verwendet werden. An einer der Verschiebungen sollte der Text eine sinnvolle Nachricht ergeben. Bei längeren Texten kann auch eine Häufigkeitsanalyse von Vorteil sein. Hier wird verglichen, welcher Buchstabe im Geheimtext am häufigsten vorkommt, und welcher in der verwendeten Sprache des Klartextes am häufigsten sein sollte. Diese eindeutig zuzuordnenden Buchstaben können dann schon eingesetzt und der Rest nach den wahrscheinlichsten Mustern ergänzt werden.
+                </p>                
+                </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[2]</button>
+                </div>
               </div>
             </li>
 
@@ -53,6 +70,12 @@
                   Die Cäsar-Verschlüsselung kann für mehr Sicherheit auch abgewandelt werden. Hier wird das Geheimtextalphabet nicht in natürlicher, sondern in veränderter Reihenfolge verwendet. Hier gibt es schon um einiges mehr Möglichkeiten, genau 26! = 403.291.461.126.605.635.584.000.000. Schlüssel ist hierbei allerdings das gesamte verwendete Geheimtextalphabet. 
                 </p>
                 </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[3]</button>
+                </div>
               </div>
             </li>
             <li class="timeline-inverted">
@@ -65,6 +88,12 @@
                 <p>
                   Da es nun nicht mehr nur 26, sondern 26! = 403.291.461.126.605.635.584.000.000 Möglichkeiten gibt, ist ein schlichtes Ausprobieren nun nicht mehr möglich. Es bleibt also nur noch die Häufigkeitsanalyse.
                 </p>
+                </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[3]</button>
                 </div>
               </div>
             </li>
@@ -83,6 +112,12 @@
                       Die Vigenère-Verschlüsselung ist ein um etwa 1550 von dem französischen Diplomaten Blaise de Vigenére entwickeltes Verfahren, das auf dem Prinzip der polyalphabetischen Substitution beruht. Hier wird im Gegensatz zum Cäsar-Verfahren nicht nur ein Geheimtextalphabet (GTA) verwendet, sonders es stehen alle möglichen GTAs (in natürlicher Reihenfolge) zur Verfügung. Welche GTAs genutzt werden und in welcher Reihenfolge, wird durch ein Schlüsselwort bestimmt, das immer wiederholt wird. Hierbei gibt es unbegrenzte Möglichkeiten zur Verschlüsselung. Wenn das Schlüsselwort also nicht bekannt ist, scheint die Entschlüsselung zuerst unmöglich, weshalb es lange Zeit als sicher galt. 
                     </p>
                 </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[4]</button>
+                </div>
               </div>
             </li>
 
@@ -96,6 +131,12 @@
                 <div class="timeline-body">
                   <p>
                     Die einzelnen Buchstaben im Schlüsselwort stehen für eine Verschiebung in der Cäsar-Verschlüsselung, die nur für diesen einen Buchstaben gilt. Da das Schlüsselwort sich aber wiederholt, wiederholt sich auch diese spezielle Verschiebung in einem bestimmten Muster. Hier kann dann wieder einzeln für die Teile mit derselben Verschiebung eine Häufigkeitsanalyse durchgeführt werden. Sollte die länge des Schlüsselworts allerdings nicht bekannt sein, kommt noch eine weiter Variable zum Ausprobieren hinzu. Ein Algorithmus nimmt also zuerst eine Länge von 2, dann 3 usw. an, bis eine sinnvolle Nachricht entsteht. Je kürzer das Schlüsselwort im Vergleich zum Gesamttext, desto leichter kann der Text entschlüsselt werden. Hat das Schlüsselwort andererseits sehr viele Stellen, kann eine Entschlüsselung teilweise unmöglich sein. Erstmals wurde das Chiffre 1854 gelöst.                  </p>
+                </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[4]</button>
                 </div>
               </div>
             </li>
@@ -112,6 +153,12 @@
                       Enigma ist das wohl bekannteste Verschlüsselungsgerät der Vergangenheit, es wurde von der Wehmacht als Standart eingeführt und im 2. Weltkrieg von ihnen genutzt. Mit 158.962.555.217.826.360.000 Möglichkeiten bot die Maschine zu damaliger Zeit die höchste mögliche Sicherheit.
                     </p>
                 </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[6] [7]</button>
+                </div>
               </div>
             </li>
 
@@ -124,9 +171,13 @@
                 </div>
                 <div class="timeline-body">
                   <p>
-                    <!-- Es wurde 1939 von Alan Turing und seinem Team im Auftrag des Britischen Geheimdienstes Entschlüsselt. Dies war ausschlaggebend in den folgenden Kriegsjahre. -->
-                    Aus abgefangenen Funksprüchen konnte der aktuelle Schlüssel ermittelt werden. Mit diesen Informationen konnte die Maschine dann analysiert und nachgebaut werden. Des Weiteren half bei der Analyse auch, dass die Enigma eher schlecht benutzt wurde. So wurden beispielsweise die Schlüssel über Funk mehrfach wiederholt, um Fehler beim Empfänger zu vermeiden. Außerdem waren die Schlüssel eher unkreativ, beispielsweise AAA oder ABC.
-                  </p>
+                    Aus abgefangenen Funksprüchen konnte oftmals der aktuelle Schlüssel ermittelt werden. Aus diesen Informationen konnte die Maschine nach und nach analysiert und zum Teil nachgebaut werden. Auch half bei der Analyse, dass die Enigma vergleichsweise schlecht benutzt wurde. So wurden beispielsweise die Schlüssel immer mehrmals wiederholt, um Fehler beim Empfänger zu vermeiden, und teilweise nur schlecht mit anderen Verfahren verschlüsselt. Den wohl wichtigsten Durchbruch machte ab 1940 der Mathematiker Alan Turing, der mit Vorbild der polnischen Mathematiker, die schon in den frühen 1930er Jahren eine sehr fortgeschrittene Analyse gefertigt hatten, die sog. Turing-Bombe baute. Sie wurde verwendet, um mit der Enigma-Maschine verschlüsselte Funksprüche zu entziffern. Unbemerkt konnten also über Jahre hinweg die geheimen Nachrichten gelesen und die Informationen verwertet werden, was mitunter das Ende des 2. Weltkrieges mitbestimmte.                   </p>
+                </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[6] [7]</button>
                 </div>
               </div>
             </li>
@@ -152,6 +203,12 @@
                       Da das Verfahren zum Ver- und Entschlüsseln jeweils einen anderen Schlüssel verwendet, gilt dieses Prinzip als asymmetrisch. 
                     </p>
                 </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[8]</button>
+                </div>
               </div>
             </li>
 
@@ -166,6 +223,12 @@
                   <p>
                     Der RSA-Algorithmus wurde von den drei Mathematikern und Kryptologen Ron Rivest, Adi Shamir und Leonard Adleman entwickelt und 1977 fertiggestellt. Das Public-Key-Kryptosystem beruht hauptsächlich auf klassischer Zahlentheorie, wobei die Sicherheit darin besteht, dass zum Berechnen des geheimen Schlüssels unter anderem zwei sehr hohe Primzahlen, p und q, multipliziert werden. Das Errechnen das Produkts ist natürlich sehr leicht, von dem Produkt allerdings auf die verwendeten Primzahlen zu schließen, ist nahezu unmöglich. Da die Zahlen sich alle in einem unvorstellbar hohen Bereich bewegen und es unbegrenzte Möglichkeiten zur Wahl von p und q gibt, kann der Private Key ohne Kenntnis von p und q bis heute nicht entschlüsselt werden. 
                   </p>
+                </div>
+                <div>
+                  <hr>
+                </div>
+                <div>
+                  <button id="padding-left" type="button" class="btn me-auto" data-bs-toggle="modal" data-bs-target="#quellen">[8]</button>
                 </div>
               </div>
             </li>
